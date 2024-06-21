@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #6CCECE;
+  }
+
+  header{
+    font-weight: bold;
+    padding: 10px;
+    & span {
+        color:var(--primary-color);
+  }
+
+  & h1 {
+    margin-bottom: 10px;
+  }
+  & p {
+    max-width: 50%;
+  }
+}
+
+  *{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .Searching_Cont{
+    background: var(--primary-color);
+    height: 300px;
+    position: relative;
+            & #cloud-1{
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            filter: grayscale(100%) brightness(200%);
+            }
+            & #cloud-2{
+              position: absolute;
+              top: 10px;
+              left: 0;
+              filter: grayscale(100%) brightness(200%);
+            }
+            & .city-input{
+                    font-weight:bold ;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+            }
+
+          & #city::placeholder,
+          & #city{
+            padding: 10px;
+            caret-color: var(--primary-color);
+          }
+            }
+
+            & .cont {
+                
+                display: flex;
+                & * {
+                    border:none;
+                }
+                & input {
+                    flex-basis: 70%;
+                    font-weight: bold;
+                    height: 30px;
+                }
+                & button {
+                    flex-basis: 30%;
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                margin-bottom: 5px
+            }
+
+
+  
+
+.weather-Big-cont{
+  display: flex;
+  margin: 10px 0;
+  flex-wrap: wrap;
+          & #weather {
+          width: 50%;
+          min-height: 200px;
+          position: absolute;
+          padding: 10px;
+          position: relative;
+          height: 241px;
+          flex-grow: 1;
+
+                  & div {
+                    text-align: center;
+                    color: #fff;
+
+                  }
+  }
+            }
+
+.city-icon {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+   & img {
+    width: 20px;
+    height: 20px;
+   }
+   &  > h3 {
+    font-size: 25px;
+   }
+  
+}
+.Data h3 {
+  font-size: 30px;
+}
+#dayORnight
+ {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+#LocalTime{
+  position: absolute;
+  bottom: 26px;
+  right: 5px;
+
+}
+
+
+
+.addit-data{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  flex-basis: 40%;
+    gap: 0.5rem;
+    padding: 10px;
+    flex-grow: 1;
+}
